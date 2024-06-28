@@ -10,7 +10,7 @@ promise
     .then((a) => {
         const A = a.filter((n) => (n % 2 == 0));
         const output1 = document.createElement('p');
-        output1.innerHTML = `The filtered array is: [${A.join(', ')}]`;
+        output1.innerHTML = `The filtered array is: ${A.join(', ')}`;
         output.appendChild(output1);
 
         return A;
@@ -19,7 +19,7 @@ promise
         setTimeout(() => {
             const B = b.map((n) => (n * 2));
             const output2 = document.createElement('p');
-            output2.innerHTML = `The squared array is: [${B.join(', ')}]`;
+            output2.innerHTML = `The squared array is: ${B.join(', ')}`;
             output.appendChild(output2);
         }, 2000);
     });
